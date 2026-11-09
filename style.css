@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url(images/desktop/image-header.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+nav ul li:last-child {
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(13, 13, 13);
+  background-color: white;
+  font-weight: bold;
+  font-family: Grorgia, "Times New Roman", Times, serif;
+  transition: 0.2s ease-in-out;
+}
+nav ul li:last-child:hover {
+  background-color: rgba(255, 255, 255, 0.358);
+  border: none;
+}
+.div1 h1 {
+  color: white;
+}
+header div {
+  text-align: center;
+  margin-top: 30vh;
+}
+.brand {
+  display: flex;
+}
+.text1 a {
+  color: black;
+  text-decoration: underline wavy yellow;
+}
+.text1 a:hover {
+  text-decoration: 5px underline yellow;
+}
+.text1 {
+  padding-top: 120px;
+  margin: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.standout {
+  display: flex;
+}
+.image2 img {
+  width: 680px;
+}
+.text2 {
+  padding-top: 100px;
+  margin: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.text2 a {
+  color: black;
+  text-decoration: underline wavy yellow;
+}
+.text2 :hover {
+  text-decoration: 5px underline yellow;
+}
+.onesection {
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  padding: 190px;
+}
+.twosection {
+  background-image: url(images/desktop/image-photography.jpg);
+  padding: 240px;
+}
+.David {
+  display: flex;
+}
+.onesection h2 {
+  padding: 0px;
+}
+.testimonials {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+}
+.testimonials-container {
+  display: flex;
+  gap: 220px;
+  justify-content: center;
+}
+.testimonials-container img {
+  border-radius: 50%;
+}
+.second-section {
+  display: flex;
+  gap: 40px;
+  margin: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.Forth-section {
+  display: flex;
+  gap: 450px;
+  margin: 50px;
+  justify-content: center;
+}
+.gallery {
+  display: flex;
+}
+.gallery img {
+  width: 350px;
+  height: 500px;
+}
+.footer {
+  color: green;
+  text-align: center;
+  padding: 100px;
+  background-color: rgb(134, 241, 117);
+}
+.footer ul {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  justify-content: center;
+  padding-top: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.footer ul li:hover {
+  color: white;
+}
+.social-links {
+  display: flex;
+  padding-top: 50px;
+  gap: 20px;
+  justify-content: center;
+}
+.social-links img:hover {
+  fill: #ffffff;
+}
+
+.test img {
+  border-radius: 50%;
+}
+.test img:hover {
+  color: white;
+}
+.test p {
+  font-size: 20px;
+}
+.test h3 {
+  font-size: 50px;
+}
+.overall-div {
+  display: flex;
+}
+
+@media (max-width: 380px) {
+  header {
+    background-image: url(images/mobile/image-header.jpg);
+    /* height: 700px; */
+    /* width: 662px; */
+    background-size: cover;
+    background-position: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .brand {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .brand img {
+    width: 390px;
+    display: block;
+    margin: 0 auto;
+    max-width: 250%;
+    height: auto;
+  }
+  .text1 {
+    padding-top: 15px;
+    margin: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .standout {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .image2 img {
+    width: 390px;
+  }
+  .onesection {
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    padding: 20px;
+    height: 70vh;
+    background-size: 70vh;
+    background-repeat: no-repeat;
+  }
+  .twosection {
+    background-image: url(images/mobile/image-photography.jpg);
+    padding: 20px;
+    height: 70vh;
+    background-size: 70vh;
+    background-repeat: no-repeat;
+  }
+  .David {
+    flex-direction: column;
+  }
+  .testimonials {
+    text-align: center;
+    padding-top: 2px;
+    font-size: 2px;
+  }
+  .testimonials-container {
+    flex-direction: column;
+  }
+  .overall-div {
+    flex-direction: column;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .gallery img {
+    width: 187px;
+    height: 150px;
+  }
+}
